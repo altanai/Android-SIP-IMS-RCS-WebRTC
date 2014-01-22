@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/widget27"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	<FrameLayout android:id="@+id/widget31"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingBottom="40dp">
+
+		<android.view.SurfaceView android:id="@+id/video_local"
+			android:layout_width="80px" android:layout_height="80px"
+			android:layout_margin="1dp" android:layout_gravity="left" />
+
+		<android.view.SurfaceView
+			android:layout_gravity="center" android:id="@+id/video_remote"
+			android:layout_width="176px" android:layout_height="144px"
+			android:layout_margin="5px"
+			android:gravity="center"/>
+	</FrameLayout>
+	<TextView android:text="Remote user id"
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:layout_marginLeft="10dp"/>
+	<EditText android:id="@+id/edit_uri" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="18sp"
+		android:layout_marginBottom="10dp">
+	</EditText>
+	<LinearLayout android:id="@+id/buttons" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button android:id="@+id/btn_open" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Open"
+			android:layout_weight="1">
+		</Button>
+		<Button android:id="@+id/btn_close" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Close"
+			android:layout_weight="1">
+		</Button>
+		<Button android:id="@+id/btn_camera" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Switch Cam"
+			android:layout_weight="1">
+		</Button>
+	</LinearLayout>
+</LinearLayout>

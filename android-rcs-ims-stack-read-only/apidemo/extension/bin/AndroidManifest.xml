@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ package="com.orangelabs.rcs.extension"
+ android:versionCode="1"
+ android:versionName="1.0">
+	
+	<uses-sdk android:minSdkVersion="5"/>	
+	
+	<uses-permission android:name="com.orangelabs.rcs.permission.RCS_EXTENSION"/>
+			
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:icon="@drawable/icon_game" android:name="com.orangelabs.rcs.extension.Game" android:label="@string/game_app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Declare the RCS Game extension -->
+           	<intent-filter>
+                <action android:name="com.orangelabs.rcs.capability.EXTENSION"/>
+                <data android:mimeType="+g.3gpp.iari-ref/urn%3Aurn-7%3A3gpp-application.ims.iari.rcse.orange.game"/>
+            </intent-filter>            
+        </activity>
+
+		<activity android:icon="@drawable/icon_wb" android:name="com.orangelabs.rcs.extension.WhiteBoard" android:label="@string/wb_app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <!-- Declare the RCS Whiteboard extension -->
+			<intent-filter>
+                <action android:name="com.orangelabs.rcs.capability.EXTENSION"/>
+                <data android:mimeType="+g.3gpp.iari-ref/urn%3Aurn-7%3A3gpp-application.ims.iari.rcse.orange.whiteboard"/>
+            </intent-filter>            
+        </activity>
+
+    </application>
+</manifest>

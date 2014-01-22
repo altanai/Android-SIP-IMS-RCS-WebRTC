@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="fill_parent" android:id="@+id/scrollView1"
+	android:layout_width="fill_parent">
+	<LinearLayout android:id="@+id/widget27" android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TextView android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_height="wrap_content" android:text="Remote user id"></TextView>
+		<EditText android:text="EditText" android:id="@+id/edit_uri" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+		<RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/radioGroup1">
+		</RadioGroup>
+		
+		<LinearLayout android:layout_width="fill_parent" android:id="@+id/bla" android:layout_height="wrap_content">
+			<Button android:layout_width="wrap_content" android:id="@+id/btn_open" android:text="Open" android:layout_height="wrap_content"></Button>
+			<Button android:layout_width="wrap_content" android:id="@+id/btn_accept" android:text="Accept" android:layout_height="wrap_content"></Button>
+			<Button android:layout_width="wrap_content" android:id="@+id/btn_reject" android:text="Reject" android:layout_height="wrap_content"></Button>
+			<Button android:layout_width="wrap_content" android:id="@+id/btn_close" android:text="Close" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		
+		<EditText android:id="@+id/sendText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Text to send"></EditText>
+		<Button android:layout_width="wrap_content" android:id="@+id/btn_send" android:layout_height="wrap_content" android:text="Send"></Button>
+	</LinearLayout>
+</ScrollView>

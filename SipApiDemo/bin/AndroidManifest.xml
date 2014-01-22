@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ android:versionCode="1"
+ android:versionName="1.0"
+ package="com.orangelabs.rcs.sip">
+
+	<uses-sdk android:minSdkVersion="5"/>
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="com.orangelabs.rcs.permission.RCS_EXTENSION"/>
+
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:name=".SipApiDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+		<activity android:name=".OriginatingSide"/>
+
+        <receiver android:name=".InvitationReceiver">
+	        <intent-filter>
+		    	<action android:name="com.orangelabs.rcs.sip.SESSION_INVITATION" />
+                <data android:mimeType="+g.3gpp.iari-ref/urn%3aurn-7%3a3gpp-application.ims.iari.rcse.orange.sipdemo" />
+        		<category android:name="android.intent.category.LAUNCHER" />
+        		<category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+        </receiver>	
+
+		<activity android:name=".TerminatingSide" />
+		
+		<activity android:name=".SessionInProgress" />
+
+		<activity android:name=".SessionsList" />
+		
+		<activity android:name=".SessionSettings" android:windowSoftInputMode="stateAlwaysHidden"/>		
+
+		<activity android:name=".SendInstantMessage"/>
+
+        <receiver android:name=".InstantMessageReceiver">
+	        <intent-filter>
+		    	<action android:name="com.orangelabs.rcs.sip.INSTANT_MESSAGE" />
+                <data android:mimeType="+g.3gpp.iari-ref/urn%3aurn-7%3a3gpp-application.ims.iari.rcse.orange.imdemo" />
+        		<category android:name="android.intent.category.LAUNCHER" />
+        		<category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+        </receiver>	
+
+</application>
+
+</manifest>

@@ -1,0 +1,13 @@
+com/orangelabs/rcs/utils/
+com/orangelabs/rcs/service/api/client/
+com/orangelabs/rcs/provider/
+com/orangelabs/rcs/platform/
+com/orangelabs/rcs/core/ims/protocol/rtp/
+com/orangelabs/rcs/core/ims/service/ImsServiceError.class
+com/orangelabs/rcs/core/ims/service/ImsSessionBasedServiceError.class
+com/orangelabs/rcs/core/ims/service/richcall/ContentSharingError.class
+com/orangelabs/rcs/core/ims/service/im/chat/ChatError.class
+com/orangelabs/rcs/core/ims/service/im/filetransfer/FileSharingError.class
+com/orangelabs/rcs/core/ims/service/sip/SipSessionError.class
+com/orangelabs/rcs/core/ims/service/im/chat/imdn/ImdnDocument.class
+com/orangelabs/rcs/core/ims/service/im/chat/event/User.class

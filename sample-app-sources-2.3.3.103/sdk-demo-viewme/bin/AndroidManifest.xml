@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jibe.sdk.demo.viewme"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+    <uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission android:name="android.permission.VIBRATE" />
+    
+    <application android:label="@string/app_name" android:name=".JibeApplication">
+        
+        <activity android:name="SplashActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name=".ChallengeReceiver">
+            <intent-filter>
+                <action android:name="jibe.intent.action.challenge.9fab66429fda410593671f96596e62f6" />
+                <action android:name="jibe.intent.action.incomingDataSession.9fab66429fda410593671f96596e62f6" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".ViewMeActivity" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="jibe.intent.action.incomingDataSession.9fab66429fda410593671f96596e62f6" />
+                <action android:name="jibe.intent.action.challenge.9fab66429fda410593671f96596e62f6" />
+                </intent-filter>
+        </activity>
+        
+    </application>
+</manifest>

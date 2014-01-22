@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<TableLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1"
+	    android:paddingTop="10dip">
+	
+		<Button android:text="@string/label_refresh"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+			 android:id="@+id/refresh_btn"/>
+
+		<TableRow android:paddingTop="5dip">
+	        <TextView android:text="@string/label_rcs_status"
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <TextView android:id="@+id/rcs_status"
+	         android:textStyle="bold"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"/>
+	    </TableRow>
+	    
+		<TableRow android:paddingTop="5dip">
+	        <TextView android:text="@string/label_registration_status"
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <TextView android:id="@+id/registration_status"
+	         android:textStyle="bold"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"/>
+	    </TableRow>
+	</TableLayout>
+	
+</ScrollView>	

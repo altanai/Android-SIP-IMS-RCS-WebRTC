@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Responder</string>
+    <string name="app_title">Auto chat responder</string>
+    <string name="label_activate">Automatic chat responder</string>
+	<string name="label_summary_activate_on">Select to turn off the responder for chat</string>
+	<string name="label_summary_activate_off">Select to turn on the responder for chat</string>
+    <string name="label_message">Responder message</string>
+	<string name="label_summary_message">Edit your predefined responder message</string>
+    
+    <string name="label_message_prefix">Auto responder message: </string>
+    <string-array name="message_list">
+        <item>I\'m not available.</item>
+        <item>I\'m out of office.</item>
+        <item>I\'m on vacations.</item>
+        <item>Sorry I\'m busy.</item>
+        <item>Do not disturb me!</item>
+    </string-array>
+    
+</resources>

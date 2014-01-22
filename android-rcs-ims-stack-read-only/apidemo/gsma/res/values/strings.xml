@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="app_name">UI Connector</string>
+<string name="label_refresh">Refresh</string>
+<string name="title_msg">Information</string>
+<string name="label_ok">OK</string>
+<string name="label_ui_not_found">UI not found!</string>
+
+
+<!-- RCS status -->
+<string name="menu_is_joyn">Is device joyn compliant</string>
+<string name="label_rcs_compliant">Your device is joyn compliant</string>
+<string name="label_not_rcs_compliant">Your device is NOT joyn compliant</string>
+<string name="label_status">Status:</string>
+<string name="label_registration_event">UI connector: registration status: %s</string>
+<string name="menu_rcs_status">Get joyn status</string>
+<string name="label_rcs_status">Status:</string>
+<string name="label_registration_status">Registration:</string>
+<string name="label_rcs">joyn</string>
+<string name="label_not_rcs">not joyn</string>
+<string name="label_registered">registered</string>
+<string name="label_unregistered">not registered</string>
+<string name="menu_is_activated">Is joyn client activated</string>
+<string name="label_client_activated">At least one joyn client is activated in the device</string>
+<string name="label_client_not_activated">No activated joyn client found in the device</string>
+<string name="label_client_settings_not_found">joyn client settings not found</string>
+<string name="label_client_not_found">joyn client not found</string>
+
+<!-- Capabilities -->
+<string name="menu_contact_capabilities">Contact capabilities</string>
+<string name="menu_my_capabilities">My capabilities</string>
+<string name="label_capabilities">Capabilities:</string>
+<string name="label_capabilities_cs_video">CS Video</string>
+<string name="label_capabilities_video">Video sharing</string>
+<string name="label_capabilities_image">Image sharing</string>
+<string name="label_capabilities_ft">File transfer</string>
+<string name="label_capabilities_im">IM session</string>
+<string name="label_capabilities_presence_discovery">Presence discovery</string>
+<string name="label_capabilities_social_presence">Social presence</string>
+<string name="label_capabilities_geoloc">Geolocation push</string>
+<string name="label_capabilities_extensions">Extensions:</string>
+<string name="label_capabilities_sf">Store and Forward:</string>
+<string name="label_capabilities_changed_event">UI connector: capabilities has changed for %s</string>
+
+<!-- UI shortcut -->
+<string name="menu_initiate_chat">Initiate chat</string>
+<string name="menu_view_chat">View chat</string>
+<string name="menu_initiate_group_chat">Initiate group chat</string>
+<string name="menu_view_group_chat">View group chat</string>
+<string name="menu_initiate_ft">Initiate file transfer</string>
+<string name="menu_view_ft">View file transfer</string>
+<string name="menu_rcs_settings">Load joyn client settings</string>
+
+</resources>
+

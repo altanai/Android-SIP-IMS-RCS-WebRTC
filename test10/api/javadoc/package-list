@@ -1,0 +1,9 @@
+com.orangelabs.rcs
+com.orangelabs.rcs.service.api.client
+com.orangelabs.rcs.service.api.client.capability
+com.orangelabs.rcs.service.api.client.media
+com.orangelabs.rcs.service.api.client.messaging
+com.orangelabs.rcs.service.api.client.presence
+com.orangelabs.rcs.service.api.client.richcall
+com.orangelabs.rcs.service.api.client.sip
+com.orangelabs.rcs.service.api.client.terms

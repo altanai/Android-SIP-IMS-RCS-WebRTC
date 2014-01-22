@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ViewMe</string>
+    <string name="launch_friend_picker">Launch Arena Friend Picker</string>
+    <string name="connection_failed">Connection to Jibe could not be established"</string>
+    <string name="connection_online">Connection to Jibe is online. You are ready to rumble!"</string>
+    <string name="connection_offline">Connection to Jibe is offline."</string>
+    <string name="outgoing_challenge_dialog_message">Waiting for %s</string>
+	<string name="outgoing_challenge_dialog_search_message">Searching for Opponent</string>
+	<string name="dlg_download_title">Download required</string>
+	<string name="dlg_download_message">You need to download Jibe Arena to play online</string>
+	<string name="dlg_incoming_challenge">Incoming ViewMe Challenge from</string>
+	<string name="btn_ok">Proceed</string>
+	<string name="btn_cancel">Cancel</string>
+</resources>

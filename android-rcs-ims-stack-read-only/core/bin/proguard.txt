@@ -1,0 +1,90 @@
+# view AndroidManifest.xml #generated:106
+-keep class com.orangelabs.rcs.addressbook.AuthenticationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.orangelabs.rcs.addressbook.LocaleChangedReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.orangelabs.rcs.addressbook.SetupRcsAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.orangelabs.rcs.addressbook.SyncAdapterService { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.orangelabs.rcs.core.ims.network.gsm.OutgoingCallReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:189
+-keep class com.orangelabs.rcs.core.ims.service.capability.ExternalCapabilityMonitoring { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class com.orangelabs.rcs.provider.eab.RichAddressBookProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:153
+-keep class com.orangelabs.rcs.provider.eventlogs.EventLogProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.orangelabs.rcs.provider.messaging.RichMessagingProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.orangelabs.rcs.provider.settings.RcsSettingsProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class com.orangelabs.rcs.provider.sharing.RichCallProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class com.orangelabs.rcs.provisioning.TermsAndConditionsRequest { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class com.orangelabs.rcs.provisioning.https.HttpsProvisioningService { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.orangelabs.rcs.service.DeviceBoot { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.orangelabs.rcs.service.DeviceShutdown { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.orangelabs.rcs.service.RcsCoreService { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class com.orangelabs.rcs.service.StartService { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class com.orangelabs.rcs.service.api.server.gsma.GetContactCapabilitiesReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.orangelabs.rcs.service.api.server.gsma.GetMyCapabilitiesReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.orangelabs.rcs.service.api.server.gsma.GetRcsStatusReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.orangelabs.rcs.settings.AboutDisplay { <init>(...); }
+
+# view res/xml/rcs_settings_csh_preferences.xml #generated:20
+-keep class com.orangelabs.rcs.settings.CShInvitationRingtone { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.orangelabs.rcs.settings.CShSettingsDisplay { <init>(...); }
+
+# view res/xml/rcs_settings_messaging_preferences.xml #generated:27
+-keep class com.orangelabs.rcs.settings.ChatInvitationRingtone { <init>(...); }
+
+# view res/xml/rcs_settings_messaging_preferences.xml #generated:11
+-keep class com.orangelabs.rcs.settings.FileTransferInvitationRingtone { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.orangelabs.rcs.settings.MessagingSettingsDisplay { <init>(...); }
+
+# view res/xml/rcs_settings_presence_preferences.xml #generated:11
+-keep class com.orangelabs.rcs.settings.PresenceInvitationRingtone { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.orangelabs.rcs.settings.PresenceSettingsDisplay { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.orangelabs.rcs.settings.SettingsDisplay { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.orangelabs.rcs.settings.UserprofileSettingsDisplay { <init>(...); }
+

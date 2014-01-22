@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<TableLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1"
+	    android:paddingTop="10dip">
+	
+		<TableRow android:paddingTop="5dip">
+			<QuickContactBadge
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:id="@+id/contact_badge"
+				android:adjustViewBounds="true" 
+				android:maxHeight="50dp" 
+				android:maxWidth="50dp" 
+				android:minHeight="50dp" 
+				android:minWidth="50dp"
+				android:background="@drawable/ri_quickcontact_badge_background"/>
+	        <Spinner android:id="@+id/contact"
+	        	android:layout_width="0dip"
+				android:layout_marginRight="5dip"/>
+	    </TableRow>
+
+		
+		<TableRow android:padding="5dip"></TableRow>
+	
+		<Button android:text="@string/label_refresh"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+			 android:id="@+id/refresh_btn"/>
+
+		<TableRow android:paddingTop="5dip">
+	        <TextView android:text="@string/label_last_capabilities_modified"
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <TextView android:id="@+id/last_capabilities_modified"
+	         android:textStyle="bold"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"/>
+	    </TableRow>
+	
+		<TableRow android:paddingTop="5dip">
+	        <TextView android:text="@string/label_capabilities"
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/image_sharing"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_image" />
+	    </TableRow>
+
+	    <TableRow>
+	        <TextView android:text=""
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/video_sharing"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_video" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView android:text=""
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/file_transfer"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_ft" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView android:text=""
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/file_transfer_http"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_ft_http" />
+	    </TableRow>
+	    
+	    <TableRow>
+	        <TextView android:text=""
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/im"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_im" />
+	    </TableRow>
+
+	    <TableRow>
+	        <TextView android:text=""
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/cs_video"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_cs_video" />
+	    </TableRow>
+	
+		<TableRow>
+	        <TextView android:text=""
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/presence_discovery"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_presence_discovery" />
+	    </TableRow>
+		
+		<TableRow>
+	        <TextView android:text=""
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <CheckBox android:id="@+id/social_presence"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 android:clickable="false"
+             android:text="@string/label_capabilities_social_presence" />
+	    </TableRow>
+
+        <TableRow>
+            <TextView android:text=""
+             android:layout_marginLeft="5dip"
+             android:gravity="right"/>
+            <CheckBox android:id="@+id/geolocation_push"
+             android:layout_marginLeft="5dip"
+             android:layout_marginRight="5dip"
+             android:textStyle="bold"
+             android:clickable="false"
+             android:text="@string/label_capabilities_geolocation_push" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView android:text=""
+             android:layout_marginLeft="5dip"
+             android:gravity="right"/>
+            <CheckBox android:id="@+id/file_transfer_thumbnail"
+             android:layout_marginLeft="5dip"
+             android:layout_marginRight="5dip"
+             android:textStyle="bold"
+             android:clickable="false"
+             android:text="@string/label_capabilities_file_transfer_thumbnail" />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text=""
+             android:layout_marginLeft="5dip"
+             android:gravity="right"/>
+            <CheckBox android:id="@+id/file_transfer_sf"
+             android:layout_marginLeft="5dip"
+             android:layout_marginRight="5dip"
+             android:textStyle="bold"
+             android:clickable="false"
+             android:text="@string/label_capabilities_file_transfer_sf" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView android:text=""
+             android:layout_marginLeft="5dip"
+             android:gravity="right"/>
+            <CheckBox android:id="@+id/group_chat_sf"
+             android:layout_marginLeft="5dip"
+             android:layout_marginRight="5dip"
+             android:textStyle="bold"
+             android:clickable="false"
+             android:text="@string/label_capabilities_group_chat_sf" />
+        </TableRow>
+        
+		<TableRow>
+	        <TextView android:text="@string/label_capabilities_extensions"
+ 			 android:layout_marginLeft="5dip"
+	         android:gravity="right"/>
+	        <TextView android:id="@+id/extensions"
+			 android:layout_marginLeft="5dip"
+			 android:layout_marginRight="5dip"
+	         android:textStyle="bold"
+			 />
+	    </TableRow>
+	    
+	</TableLayout>
+	
+</ScrollView>	

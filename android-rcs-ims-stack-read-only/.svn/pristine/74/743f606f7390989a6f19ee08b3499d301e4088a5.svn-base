@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ android:versionCode="1"
+ android:versionName="2.5.5"
+ package="com.orangelabs.rcs.connector">
+
+	<uses-sdk android:minSdkVersion="5"/>
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+	
+	<uses-permission android:name="com.orangelabs.rcs.permission.RCS"/>	
+    
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name">
+
+        <activity android:name=".TestUiConnector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		
+        <activity android:name=".GetRcsStatus"/>
+
+		<receiver android:name=".RegistrationStatusReceiver">
+			<intent-filter>
+		    	<action android:name="android.net.rcs.REGISTRATION_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".GetMyCapabilities"/>
+
+        <activity android:name=".GetContactCapabilities"/>
+        
+		<receiver android:name=".ContactCapabilitiesReceiver">
+			<intent-filter>
+		    	<action android:name="android.net.rcs.CAPABILITIES_CHANGED"/>
+            </intent-filter>
+        </receiver>        
+</application>
+
+</manifest>

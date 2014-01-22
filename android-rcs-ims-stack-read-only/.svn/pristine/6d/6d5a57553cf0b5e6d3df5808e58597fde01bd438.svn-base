@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Extensions demo</string>
+    <string name="game_app_name">Network game</string>
+    <string name="wb_app_name">White board</string>
+</resources>

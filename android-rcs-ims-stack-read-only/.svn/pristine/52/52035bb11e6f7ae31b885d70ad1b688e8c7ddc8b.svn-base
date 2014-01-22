@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ android:versionCode="1"
+ android:versionName="1.0"
+ package="com.orangelabs.rcs.widget">
+      
+	<uses-sdk android:minSdkVersion="5"/>
+	
+	<uses-permission android:name="com.orangelabs.rcs.permission.RCS"/>
+	
+	<application android:icon="@drawable/rcs_icon" android:label="@string/widget_title">  
+		
+		<receiver android:name=".RcsWidgetProvider">
+			<intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+		        <action android:name="com.orangelabs.rcs.SERVICE_STATUS"/>
+		        <action android:name="com.orangelabs.rcs.IMS_STATUS"/>
+		        <action android:name="com.orangelabs.rcs.widget.ACTIVATE"/>
+		        <action android:name="com.orangelabs.rcs.widget.DEACTIVATE"/>
+			</intent-filter>
+		    
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_provider" />
+		</receiver>
+
+    </application> 
+
+</manifest>
